@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .middle-two {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+  .team-list {
+    gap: 64px 24px;
+  }
+  .team-item {
+    width: calc((100%-30px) / 2);
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
+  .customers-item {
+    width: calc((100% - 60px) / 3);
+  }
+}

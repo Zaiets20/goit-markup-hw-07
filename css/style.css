@@ -32,7 +32,7 @@ body {
 }
 .container {
   margin: auto;
-  width: 1158px;
+  /* width: 1158px; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -170,6 +170,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+/* -------------------PORFOLIO---------------------- */
 .portfolio-list {
   display: flex;
   gap: 48px 24px;
@@ -239,8 +240,8 @@ body {
 /* -----------------FOOTER------------------ */
 .footer {
   background-color: var(--dark);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-logo {
   font-weight: 800;
@@ -252,6 +253,7 @@ body {
   text-transform: uppercase;
   color: var(--cloud);
   font-family: "Raleway";
+  justify-content: center;
 }
 .logo-part-ftr {
   color: var(--primay-brand);
@@ -264,6 +266,7 @@ body {
   color: var(--cornflower);
   max-width: 264px;
   margin-top: 16px;
+  margin-bottom: 72px;
 }
 .footer-sc-title {
   font-weight: 500;
@@ -272,6 +275,7 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 8px;
+  text-align: center;
 }
 .footer-soc-list {
   display: flex;
@@ -294,19 +298,28 @@ body {
 }
 .footer-flex {
   display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.exp-top {
+  padding-left: 16px;
+  margin-left: auto;
 }
 .exp {
-  margin-left: 120px;
+  /* margin-left: 120px; */
+  margin-bottom: 72px;
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31d0aa;
 }
 .soc-footer {
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 .soc-form {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .soc-title-footer {
   font-weight: 500;
@@ -315,6 +328,7 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .soc-btn-footer {
   background: #4d5ae5;
@@ -329,6 +343,7 @@ body {
   display: flex;
   gap: 16px;
   border: none;
+  margin-top: 16px;
 }
 .soc-icon {
   fill: #ffffff;
@@ -338,7 +353,7 @@ body {
   font-size: 12px;
   line-height: 2;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -408,9 +423,13 @@ body {
   background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+/* -----------------------MIDLE---------------------- */
 .middle {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.middle-item {
+  width: 100%;
 }
 .icon-middle-svg {
   display: flex;
@@ -428,22 +447,25 @@ body {
 }
 .middle-list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 24px;
 }
 .middle-name {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--dark);
   margin-bottom: 8px;
+  text-align: center;
 }
 .middle-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-  max-width: 264px;
+  max-width: 396px;
 }
 .about {
   font-weight: 700;
@@ -459,13 +481,14 @@ body {
   gap: 24px;
   margin-top: 72px;
 }
+/* ----------------------------MIDDLE-TWO--------------------------- */
 .middle-two {
   padding-bottom: 120px;
 }
 .team {
   background: var(--cloud);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 128px;
 }
 .team-title {
   font-weight: 700;
@@ -479,7 +502,9 @@ body {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
 }
 .team-item {
   background-color: var(--white);
@@ -513,6 +538,7 @@ body {
 }
 .team-soc-list {
   display: flex;
+
   justify-content: center;
   gap: 24px;
 }
@@ -534,9 +560,10 @@ body {
 .team-soc-link:focus {
   background-color: #404bbf;
 }
+/* ---------------------CUSTOMERS-------------------- */
 .customers {
-  padding-top: 128px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-title {
   font-weight: 700;
@@ -561,12 +588,14 @@ body {
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 72px 16px;
   align-items: center;
 }
 .customers-item {
-  width: calc((100%-120px) / 6);
+  /* width: calc((100%-120px) / 6); */
+  width: calc((100% - 30px) / 2);
   height: 88px;
 }
 .customers-link {
@@ -592,6 +621,7 @@ body {
 .customers-link:focus .customers-icon {
   fill: #404bbf;
 }
+/* ------------------MODAL---------------------- */
 .backdrop {
   position: fixed;
   top: 0;
