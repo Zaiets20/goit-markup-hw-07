@@ -75,10 +75,16 @@
   }
   .exp {
     margin-left: 120px;
-    margin-right: 70px;
+    margin-right: 80px;
+    margin-bottom: unset;
+  }
+  .exp-top {
+    padding-left: unset;
+    margin-left: unset;
+    margin-bottom: unset;
   }
   .footer > .container {
-    width: 1128px;
+    width: 1158px;
     align-items: baseline;
   }
   .footer {
@@ -90,10 +96,16 @@
     flex-wrap: nowrap;
     margin: 0 auto;
   }
+  .soc-title-footer {
+    margin-left: unset;
+  }
   .footer-soc-list {
     display: flex;
     justify-content: center;
     gap: 16px;
+  }
+  .soc-form {
+    margin-left: unset;
   }
   .footer-soc-link {
     display: flex;
