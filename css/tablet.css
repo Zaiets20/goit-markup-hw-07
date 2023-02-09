@@ -106,6 +106,8 @@
     padding-top: 96px;
     padding-bottom: 104px;
   }
+  .team-photo {
+  }
   .team-list {
     gap: 64px 24px;
     flex-wrap: wrap;
