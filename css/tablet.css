@@ -2,6 +2,12 @@
   .container {
     width: 768px;
   }
+  .middle-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc((100% - 60px) / 2);
+  }
   .middle-two {
     position: absolute;
     width: 1px;
