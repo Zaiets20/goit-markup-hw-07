@@ -24,13 +24,16 @@
     overflow: hidden;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
   .container {
-    width: 426px;
+    width: 428px;
   }
   .main-page-title {
   }
   .modal {
     width: 392px;
+  }
+  .mob-soc-list {
+    gap: 56px;
   }
 }
