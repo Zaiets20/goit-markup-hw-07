@@ -2,6 +2,14 @@
   .container {
     width: 768px;
   }
+  .hero-fon {
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("/img/tablet-bg.jpg");
+  }
   .menu-open {
     position: absolute;
     width: 1px;
@@ -123,5 +131,16 @@
   }
   .footer > .container {
     width: 552px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-fon {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("/img/tablet-bg-2x.jpg");
   }
 }

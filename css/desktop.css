@@ -2,6 +2,14 @@
   .container {
     width: 1200px;
   }
+  .hero-fon {
+    width: 1128px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("/img/people-office.jpg");
+  }
   .header-contacts {
     gap: 40px;
     flex-direction: unset;
@@ -62,5 +70,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-fon {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("/img/people-office-2x.jpg");
   }
 }
